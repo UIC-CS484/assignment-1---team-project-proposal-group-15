@@ -1,6 +1,6 @@
 # ReadMe
 
-### Page: [https://uic-cs484.github.io/assignment-1---team-project-proposal-group-15/proposal.html]
+### Page: https://uic-cs484.github.io/assignment-1---team-project-proposal-group-15/proposal.html
 
 ## Workflow Strategy
 TODO
