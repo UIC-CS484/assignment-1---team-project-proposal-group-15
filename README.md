@@ -1,5 +1,10 @@
 # ReadMe
 
+### Page:
+
+## Workflow Strategy
+TODO
+
 ## Team Members
 ### Asif Iqbal Gazi 
 - [agazi3@uic.edu](agazi3@uic.edu)
@@ -12,9 +17,6 @@
 ### Sai Nirmal Morampudi 
 - [smoram2@uic.edu](smoram2@uic.edu)
 - [https://github.com/nirmal0806](https://github.com/nirmal0806)
-
-## Workflow Strategy
-TODO
 
 ## Development Tools
 TODO
