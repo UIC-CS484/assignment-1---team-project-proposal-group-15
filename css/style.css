@@ -11,6 +11,11 @@ header {
     background-color: lightgray;
 }
 
+@media (max-width: 800px) {
+    .middleboxes {
+      flex-direction: column;
+    }
+  }
 .middleboxes {
     background-color: lightgray;
     width: 450px;
