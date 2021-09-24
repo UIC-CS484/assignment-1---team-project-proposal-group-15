@@ -14,11 +14,6 @@ We use GitHub project tools to track our overall progress, task assigning.
 
 
 
-### Page: https://uic-cs484.github.io/assignment-1---team-project-proposal-group-15/proposal.html
-
-## Workflow Strategy
-TODO
-
 ## Team Members
 ### Asif Iqbal Gazi 
 - [agazi3@uic.edu](agazi3@uic.edu)
@@ -26,18 +21,13 @@ TODO
 
 ###  Zainab Mohammad 
 - [zmoham22@uic.edu](zmoham22@uic.edu)
-- [https://github.com/ZainabMo](https://github.com/ZainabMo)
+- [https://github.com/zmoham22](https://github.com/zmoham22)
 
 ### Sai Nirmal Morampudi 
 - [smoram2@uic.edu](smoram2@uic.edu)
 - [https://github.com/nirmal0806](https://github.com/nirmal0806)
 
 ## Development Tools
-<<<<<<< HEAD
-TODO
-
-=======
 ⇥ **Visual Studio Code** - Code Editor
 
 ⇥ **Postman** - For testing API
->>>>>>> skeleton
