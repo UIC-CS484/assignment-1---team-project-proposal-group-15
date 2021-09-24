@@ -25,7 +25,7 @@ We use GitHub project tools to track our overall progress, task assigning.
 
 ### Sai Nirmal Morampudi 
 - [smoram2@uic.edu](smoram2@uic.edu)
-- [https://github.com/nirmal0806](https://github.com/nirmal0806)
+- [https://github.com/SaiNirmalMorampudi](https://github.com/SaiNirmalMorampudi)
 
 ## Development Tools
 ⇥ **Visual Studio Code** - Code Editor
