@@ -2,76 +2,93 @@
 @font-face {
     font-family: 'Arvo';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     src: local(''),
-         url('../fonts/arvo-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/arvo-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('../fonts/arvo-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/arvo-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 .container{
     font-size: 15px;
     color: rgb(85, 85, 85);
     font-family: 'Avro', Arial, Helvetica, sans-serif, Times, serif;
-    width: 1000px;
-    height: 100vh;
-    background-color: white;
+    max-width: 60%;
+    height: auto;
+    flex-basis: 1000px;
+    /* background-color: yellow; */
+    display: flex;
     margin: 0 auto;
-    flex-wrap: wrap;
+    /* flex-direction: column;
+    flex-wrap: nowrap; */
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    padding: 1%;
+    /*align-items: center;*/
 }
 
-.horizontal-row {
-    width: 100%;
-    margin-bottom: 20px;
+.item{
+    margin: 1%;
+    /* border-radius: 8px;
+    box-shadow: 1px 2px 5px black; */
 }
-
 .header{
+    padding: 1%;
     text-align: center;
     background-color: gainsboro;
-    padding: 20px;
-    padding-top: 10px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    /* border-radius: 8px;
+    box-shadow: 1px 2px 5px black; */
 }
 
 .mid {
+    height: auto;
     display: flex;
     flex-direction: row;
+    flex-grow: 5;
+    flex-shrink: 1;
     justify-content: space-between;
+    margin: 0;
+    /* background-color: yellowgreen; */
+    
 }
 .middleboxes{
-    min-height: 220px;
     width: 45%;
     background-color: gainsboro;
-    padding: 20px;
     margin: 1%;
+    padding: 2%;
+    /* border-radius: 8px;
+    box-shadow: 1px 2px 5px black; */
 }
 .footer{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    background-color: gainsboro;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    min-height: 22px;
-    width: 100%;    
+    flex-grow: 4;
+    flex-shrink: 1;
+    justify-content: space-between;
+    background-color: gainsboro; 
+    /* border-radius: 8px;
+    box-shadow: 1px 2px 5px black; */
 }
-.footer_box{
-    min-height: 98%;
-    width: 27%;
-    padding: 20px;
-    background-color: rgb(173, 173, 173);
+.footerboxes{
+    width: 30%;
     margin: 1%;
-    
+    padding: 1%;
+    background-color: rgb(173, 173, 173); 
+    /* border-radius: 8px;
+    box-shadow: 1px 2px 5px black; */
 }
 
 /* CSS For Slider taken from https://www.w3schools.com/howto/howto_js_rangeslider.asp
 /* The slider itself */
 .slider {
     -webkit-appearance: none;  /* Override default CSS styles */
-    appearance: none;
-    width: 100%; /* Full-width */
-    height: 25px; /* Specified height */
+    width: 50%; /* Full-width */
+    height: 5px; /* Specified height */
+    border-radius: 5px;
     background: #d3d3d3; /* Grey background */
     outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    opacity: 0.5; /* Set transparency (for mouse-over effects on hover) */
     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
     transition: opacity .2s;
 }
@@ -85,8 +102,9 @@
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none; /* Override default look */
     appearance: none;
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
+    width: 20px; /* Set a specific slider handle width */
+    height: 20px; /* Slider handle height */
+    border-radius: 50%; /* Round Slider */
     background: #04AA6D; /* Green background */
     cursor: pointer; /* Cursor on hover */
 }
@@ -94,22 +112,68 @@
 .slider::-moz-range-thumb {
     width: 25px; /* Set a specific slider handle width */
     height: 25px; /* Slider handle height */
+    /*border-radius: 50%;*/
     background: #04AA6D; /* Green background */
     cursor: pointer; /* Cursor on hover */
 }
 
-@media (max-width: 800px) {
-    .header {
-        width: 50%;
+/* Smaller than 1024 pixels */
+@media screen and (max-width: 1024px) {
+    .container{
+        width: 80%;
+    }
+    .m1{
+        order: 2;
+    }
+    .m2{
+        order: 1;
     }
     .mid {
-        flex-direction: column;
+        /* flex-wrap: wrap;
+        flex-direction: column; */
+        flex-flow: column wrap;
+        justify-content: space-around;
     }
-    .footer {
-        flex-direction: column;
-        width: 50%;
+    .middleboxes{
+        width: auto;
     }
-    .footer_box {
+}
+/* Smaller than 768 pixels */
+@media screen and (max-width: 768px) {
+    .container{
         width: 90%;
+    }
+    .m1{
+        order: 2;
+    }
+    .m2{
+        order: 1;
+    }
+    .mid {
+        /* flex-wrap: wrap;
+        flex-direction: column; */
+        flex-flow: column wrap;
+        justify-content: space-around;
+    }
+    .middleboxes{
+        width: auto;
+    }
+    .f1{
+        order: 1;
+    }
+    .f2{
+        order: 0;
+    }
+    .f3{
+        order: 2;
+    }
+    .footer{
+        /* flex-wrap: wrap;
+        flex-direction: column; */
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+    }
+    .footerboxes{
+        width: auto;
     }
 }

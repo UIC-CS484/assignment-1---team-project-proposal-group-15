@@ -11,41 +11,39 @@
     </head>
     <body>
         <div class="container" id="fc">
-            <div class="horizontal-row">
-                <div class="header">
-                    <h2>Transport suggestor</h2><br>
-                    <p>An application which gives an informed decision to take a particular route or not</p>
+            <div class="item header">
+                <h2>Transport Suggestion</h2><br>
+                <p>An application which gives an informed decision to take a particular route or not</p>
+            </div>
+            <div class="item mid">
+                <div class="m1 middleboxes">
+                    <b>RESTFul API's used:</b><br>
+                    CTA Bus Tracker,Train Tracker and Weather API<br>
+                    <br>
+                    <b>How will this api give insight to users?</b><br>
+                    The Data received from API's will help in forming a collective desicion to take a particualr route or not<br>
+                    <br>
+                    <b>What are we collecting from the users?</b><br>
+                    Start location,drop location and starting time of the journey<br>
+                    <br>
+                    <b>Identify all entities/tables we might use:</b><br>
+                    USER -> fname, lname, gender, email, password, start_location, drop_location and starting_time<br>
+                    
+                </div>
+                <div class="m2 middleboxes">
+                    <b>Who will potentially use this site?</b><br>
+                    People travelling using the CTA will find this useful<br>
+                    <br>
+                    <b>Site Goals?</b><br>
+                    1. Our focus is to help the users in making an informed desicion while planning to travel along a particular route<br>
+                    2. Based on gathered travel data (anonymised ofcourse) we want to add in more feature to help the users<br>
+                    <br>
+                    <b>Why did we select this topic?</b><br>
+                    We selected this project because many people including most of UIC students use CTA for daily commuting, this will help them make informed decision<br>
                 </div>
             </div>
-            <div class="horizontal-row">
-                <div class="mid">
-                    <div class="middleboxes">
-                        <b>RESTFul API's used:</b><br>
-                        CTA Bus Tracker,Train Tracker and Weather API<br>
-                        <br>
-                        <b>How will this api give insight to users?</b><br>
-                        The Data received from API's will help in forming a collective desicion to take a particualr route or not<br>
-                        <br>
-                        <b>What are we collecting from the users?</b><br>
-                        Start location,drop location and starting time of the journey<br>
-                        <br>
-                        <b>Identify all entities/tables we might use:</b><br>
-                        USER -> fname, lname, gender, email, password, start_location, drop_location and starting_time<br>
-                        
-                    </div>
-                    <div class="middleboxes">
-                        <b>Who will potentially use this site?</b><br>
-                        People travelling using the CTA will find this useful<br>
-                        <br>
-                        <p>1. Our focus is to help the user in making an informed desicion while planning to travel along a particular route</p>
-                        <p>2. Based on gathered travel data (anonymised ofcourse) we want to add in more feature to help the users</p><br>
-                        <b>Why did we select this topic?</b><br>
-                        We selected this project because many people including most of UIC students use CTA for daily commuting, this will help them make informed decision"<br>
-                    </div>
-                </div>
-            </div>
-            <div class="footer">
-                <div class="footer_box">
+            <div class="item footer">
+                <div class="f1 footerboxes">
                     <b>List of Resource Links:</b><br><br>
                     &nbsp;- Link to API:<br>
                     <ul>
@@ -61,18 +59,19 @@
                     &nbsp;&nbsp;&nbsp;nodejs.dev<br>
                     &nbsp;&nbsp;&nbsp;w3schools.com
                 </div>
-                <div class="footer_box">
+                <div class="f2 footerboxes">
                     <b>Questions and Concerns:</b><br><br>
-                    <b>- Can we monetize the application?</b>
+                    &nbsp;- Can we monetize the application?
                 </div>
-                <div class="footer_box">
+                <div class="f3 footerboxes">
                     <b>Accessibility implementation:</b><br>
                     <br>
                     <div class="slidecontainer">
                         <label>Change the font size:</label>
-                        <input type="range" min="10" max="30" value="50" class="slider" id="myRange">
-                        <p>Current Size: <span id="font_size"></span></p>
-                    </div>  
+                        <br>
+                        <input type="range" min="10" max="50" value="15" class="slider" id="myRange">
+                        Size: <span id="font_size"></span>
+                    </div>
                 </div>
             </div>
     </div>
