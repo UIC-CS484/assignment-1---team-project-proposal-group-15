@@ -6,79 +6,60 @@
     src: local(''),
          url('../fonts/arvo-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
          url('../fonts/arvo-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
+}
 
-.full-container {
+.container{
     font-size: 15px;
     color: rgb(85, 85, 85);
     font-family: 'Avro', Arial, Helvetica, sans-serif, Times, serif;
-}
-.container {
     width: 1000px;
     height: 100vh;
     background-color: white;
     margin: 0 auto;
-}
-h2 {
-    margin-bottom: 0px;
-}
-p {
-    margin-top: 0px;
+    flex-wrap: wrap;
 }
 
 .horizontal-row {
     width: 100%;
     margin-bottom: 20px;
 }
-.header {
+
+.header{
     text-align: center;
     background-color: gainsboro;
     padding: 20px;
     padding-top: 10px;
 }
 
-.middle {
+.mid {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.middle-box {
+.middleboxes{
     min-height: 220px;
     width: 45%;
     background-color: gainsboro;
     padding: 20px;
+    margin: 1%;
 }
-.middle-box p{
-margin-top: -1rem;
-}
-.footer-vessel {
-    background-color: gainsboro;
-}
-.footer-object {
-    padding-bottom: 15px;
-    padding-top: 15px;
-    min-height: 200px;
-    width: 100%;
+.footer{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    background-color: gainsboro;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    min-height: 22px;
+    width: 100%;    
 }
-.footer-package{
+.footer_box{
     min-height: 98%;
     width: 27%;
     padding: 20px;
     background-color: rgb(173, 173, 173);
-}
-a{
-    text-decoration: none;
-    color: inherit;
-}
-.Site-Goals{
-    margin-top: 20px;
-    font-weight: bold;
-}
-.slidecontainer {
-    width: 100%; /* Width of the outside container */
+    margin: 1%;
+    
 }
 
 /* CSS For Slider taken from https://www.w3schools.com/howto/howto_js_rangeslider.asp
@@ -117,43 +98,18 @@ a{
     cursor: pointer; /* Cursor on hover */
 }
 
-@media only screen and (max-width: 600px) {
-    .main-container {
-        color:rgb(153, 19, 146);
-        background-color: rgb(255, 157, 247);
-        font-family: "Comic Sans MS", sans-serif;
-    }
-
-    .container {
-        background-color: rgb(255, 157, 247);
-        width: 100%;
-        height: 200vh;
-    }
-    .footer-container {
-        background-color: rgb(219, 140, 250);
-    }
-    .footer-box {
-        margin-bottom: 15px;
-        width:auto;
-        background-color: rgb(201, 112, 236);
-    }
-
-    .footer-package {
-        display: inline;
-        background-color: rgb(201, 112, 236);
-    }
-    
+@media (max-width: 800px) {
     .header {
-        background-color: rgb(219, 140, 250);
+        width: 50%;
     }
-    .middle-box {
-        background-color: rgb(219, 140, 250);
-        width: 40%;
+    .mid {
+        flex-direction: column;
     }
-}
-
-@media only screen and (max-width: 1024px) {
-    .page {
-        font-family: "Comic Sans MS", sans-serif;
+    .footer {
+        flex-direction: column;
+        width: 50%;
+    }
+    .footer_box {
+        width: 90%;
     }
 }

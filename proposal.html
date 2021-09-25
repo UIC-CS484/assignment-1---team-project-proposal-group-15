@@ -10,8 +10,7 @@
         <link rel="stylesheet" type="text/css" href="./css/style.css"/>
     </head>
     <body>
-    <div class="full-container", id="fc">
-        <div class="container">
+        <div class="container" id="fc">
             <div class="horizontal-row">
                 <div class="header">
                     <h2>Transport suggestor</h2><br>
@@ -19,8 +18,8 @@
                 </div>
             </div>
             <div class="horizontal-row">
-                <div class="middle">
-                    <div class="middle-box">
+                <div class="mid">
+                    <div class="middleboxes">
                         <b>RESTFul API's used:</b><br>
                         CTA Bus Tracker,Train Tracker and Weather API<br>
                         <br>
@@ -32,56 +31,51 @@
                         <br>
                         <b>Identify all entities/tables we might use:</b><br>
                         USER -> fname, lname, gender, email, password, start_location, drop_location and starting_time<br>
+                        
                     </div>
-                    <div class="middle-box">
+                    <div class="middleboxes">
                         <b>Who will potentially use this site?</b><br>
                         People travelling using the CTA will find this useful<br>
                         <br>
-                    <div class="Site-Goals"> <p>Site Goals?</p></div>
                         <p>1. Our focus is to help the user in making an informed desicion while planning to travel along a particular route</p>
                         <p>2. Based on gathered travel data (anonymised ofcourse) we want to add in more feature to help the users</p><br>
                         <b>Why did we select this topic?</b><br>
-                        "We selected this project because many people including most of UIC students use CTA for daily commuting, this will help them make informed decision"<br>
+                        We selected this project because many people including most of UIC students use CTA for daily commuting, this will help them make informed decision"<br>
                     </div>
                 </div>
             </div>
-            <div class="horizontal-row">
-                <div class="footer-vessel">
-                    <div class="footer-object">
-                        <div class="footer-package">
-                            <b>List of Resource Links:</b><br><br>
-                            &nbsp;- Link to API:<br>
-                            <ul>
-                            <li><a href="https://openweathermap.org/api">Weather API</a><br></li>
-                            <li><a href="https://www.transitchicago.com/developers/traintracker/">Train Tracking API</a></li>
-                            <li><a href="https://www.transitchicago.com/developers/bustracker/">Bus Tracking API</a></li>
-                            <li><a href="https://openweathermap.org/api">Customer Alerts API</a><br></li>
-                        </ul>
-                            <br>
-                            &nbsp;- Link to site(s) to model after:<br>
-                            <ul><li><a href="https://www.expedia.com/">expedia.com</a><br></li></ul>
+            <div class="footer">
+                <div class="footer_box">
+                    <b>List of Resource Links:</b><br><br>
+                    &nbsp;- Link to API:<br>
+                    <ul>
+                    <li><a href="https://openweathermap.org/api">Weather API</a><br></li>
+                    <li><a href="https://www.transitchicago.com/developers/traintracker/">Train Tracking API</a></li>
+                    <li><a href="https://www.transitchicago.com/developers/bustracker/">Bus Tracking API</a></li>
+                    <li><a href="https://openweathermap.org/api">Customer Alerts API</a><br></li>
+                    </ul>
+                    &nbsp;- Link to site(s) to model after:<br>
+                    <ul><li><a href="https://www.expedia.com/">expedia.com</a><br></li></ul>
 
-                            &nbsp;- Resources:<br>
-                            &nbsp;&nbsp;&nbsp;nodejs.dev<br>
-                            &nbsp;&nbsp;&nbsp;w3schools.com
-                        </div>
-                        <div class="footer-package">
-                            <b>Questions and Concerns:</b>
-                        </div>
-                        <div class="footer-package">
-                            <b>Accessibility implementation:</b><br>
-                            <br>
-                            <div class="slidecontainer">
-                                <label>Change the font size:</label>
-                                <input type="range" min="10" max="30" value="50" class="slider" id="myRange">
-                                <p>Current Size: <span id="font_size"></span></p>
-                            </div>                            
-                        </div>
-                    </div>
+                    &nbsp;- Resources:<br>
+                    &nbsp;&nbsp;&nbsp;nodejs.dev<br>
+                    &nbsp;&nbsp;&nbsp;w3schools.com
+                </div>
+                <div class="footer_box">
+                    <b>Questions and Concerns:</b><br><br>
+                    <b>- Can we monetize the application?</b>
+                </div>
+                <div class="footer_box">
+                    <b>Accessibility implementation:</b><br>
+                    <br>
+                    <div class="slidecontainer">
+                        <label>Change the font size:</label>
+                        <input type="range" min="10" max="30" value="50" class="slider" id="myRange">
+                        <p>Current Size: <span id="font_size"></span></p>
+                    </div>  
                 </div>
             </div>
-        </div>
     </div>
-    </body>
     <script src="./js/fontScript.js"></script>
+    </body>
 </html>
