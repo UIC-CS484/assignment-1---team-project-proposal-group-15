@@ -20,6 +20,7 @@ header {
     flex-basis: 400px;
     margin: 1%;
     padding:20px;
+    overflow:scroll;
 }
 
 @media (max-width: 1200px) {
@@ -47,6 +48,7 @@ footer {
     height: 200px;
     padding: 20px;
     margin-bottom: 20px;
+    overflow:scroll;
 }
 .footer_box:nth-child(1){
     display: flex;
@@ -54,6 +56,7 @@ footer {
     flex: 1 0 20px;
     height: 200px;
     margin-bottom: 20px;
+    overflow:scroll;
 }
 .footer_box:nth-child(2){
     display: flex;
@@ -61,6 +64,7 @@ footer {
     flex: 1 0 20px;
     height: 200px;
     margin-bottom: 20px;
+    overflow:scroll;
 }
 
 @media screen and (max-width: 1148px) {

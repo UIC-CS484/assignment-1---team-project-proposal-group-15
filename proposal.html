@@ -24,39 +24,58 @@
             <p>Transport Suggestion</p>
         </header>
         <section class="middleboxes">
-            <h1>Address of the following in this section:</h1>
+            <h1>API Information:</h1>
             <ul>
-                <li>  CTA Bus Tracker,Train Tracker and Weather API is being used  </li> <br> 
-            </br>
-                <li>The Data received from API's will help in forming a collective desicion to take a particualr route or not </li>
+                <li>  CTA Bus Tracker, Train Tracker, Chicago Crime Portal, and OpenWeather API are being used.</li>
                 <br> </br>
-                <li> Data collected would be the Start location,drop location and starting time of the journey</li>
+                <li>The Data received from API's will help in forming a collective desicion to take a particular route with a certain transportation or not. </li>
                 <br> </br>
-                <li> Identify all entities/tables you might use in your database along with their respective attributes
+                <li> Data collected from the user would be the start location, drop location, and the starting time of the journey.</li>
+                <li><h3>API Entities Used</h3>
+                    <b>OpenWeather API:</b> coord, weather.main, main.temp, main.feelslike, wind.speed
+                    <br></br>
+                    <b>Crime API:</b> date, block, latitude, longitude, location
+                    <br></br>
+                    <b>Bus API:</b> dly, dstp
+                    <br></br>
+                    <b>Train API:</b> ././isDly, ./././isDly, ./././arrT, ././arrT 
                 </li>
-                <br> </br>
             </ul>
             
         </section>
         <section class="middleboxes">
             <h3>User Information:</h3>
                 <ul>
-                    <li> people travelling using the CTA will use this </li>
+                    <li> People travelling using the CTA will use this site. They need information that reflects realtime situations that may have an effect on their personal safety.</li>
                     <br> </br>
-                    <li> our focus is to help the user in making an informed desicion while planning to travel along a particular route</li>
-                    <br> </br>
-                    <li> why did you select this topic?</li>
+                    <li> Our focus is to help the user in making an informed desicion while planning to travel along a particular route.</li>
+                    <h4>Goals:</h4> 
+                    Estimate current arrival time of public transportation.
+                    <br></br>
+                    Display delays, extreme weather, and crime warnings.
+                    <li> There is no one-stop shop that combines all the data necessary when making a transportation choice.
+                        Bus and train times on map applications are usually inaccurate. For crime information, users specifically
+                    have to search up news their area. Combining these three types of data will help users make better travel choices.</li>
                 </ul>
         </section>
         <footer>
             <div class="footer_box">
                 <h3>List of Resource Links:</h3>
                 <ul>
-                    <li> Link to API:</li>
+                    <li> Link to API:
                     <br> </br>
-                    <li> Link to site(s) to model after:</li>
+                    <a href="https://openweathermap.org/api">Weather API</a>
                     <br> </br>
-                    <li> Resources:</li>
+                    <a href="https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2">Chicago Crime API</a>
+                    <br> </br>
+                    <a href="https://www.transitchicago.com/developers/traintracker">CTA Train API</a>
+                    <br> </br>
+                    <a href="https://www.transitchicago.com/developers/bustracker/">CTA Bus API</a>
+                    <br> </br>
+                </li>
+                    <!-- <li> Link to site(s) to model after:</li>
+                    <br> </br>
+                    <li> Resources:</li> -->
                 </ul>
             </div>
             <div class="footer_box">
