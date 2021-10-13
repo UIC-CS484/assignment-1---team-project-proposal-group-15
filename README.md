@@ -21,7 +21,7 @@ We use GitHub project tools to track our overall progress, task assigning.
 
 ###  Zainab Mohammad 
 - [zmoham22@uic.edu](zmoham22@uic.edu)
-- [https://github.com/zmoham22](https://github.com/zmoham22)
+- [https://github.com/ZainabMo](https://github.com/ZainabMo)
 
 ### Sai Nirmal Morampudi 
 - [smoram2@uic.edu](smoram2@uic.edu)
